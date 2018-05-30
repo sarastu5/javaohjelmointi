@@ -1,0 +1,41 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ page import="dao.Dao" %>
+<%@ page import="model.Vene" %>
+<%@ page import="java.util.ArrayList" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title>Veneiden listaus</title>
+	</head>
+	<body>
+		<table class="table table-striped">
+		  <thead>
+		    <tr>
+		      <th scope="col">Nimi</th>
+		      <th scope="col">Merkkimalli</th>
+		      <th scope="col">Pituus</th>
+		      <th scope="col">Leveys</th>
+		      <th scope="col">Hinta</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+				<%
+				Dao dao = new Dao();
+				ArrayList<Vene> veneet = dao.listaaKaikki();
+				for (int i=0; i<veneet.size(); i++) {
+					out.print("<tr>");
+					out.print("<td>" + veneet.get(i).getTunnus() + "</td> ");
+					out.print("<td>" + veneet.get(i).getNimi() + "</td>");
+					out.print("<td>" + veneet.get(i).getMerkkimalli() + "</td>");
+					out.print("<td>" + veneet.get(i).getPituus() + "</td>");
+					out.print("<td>" + veneet.get(i).getLeveys() + "</td>");
+					out.print("<td>"veneet.get(i).getHinta() + "</td>");
+					out.print("</tr>");
+				}
+				%>
+			</tbody>
+		</table>
+	</body>
+</html>

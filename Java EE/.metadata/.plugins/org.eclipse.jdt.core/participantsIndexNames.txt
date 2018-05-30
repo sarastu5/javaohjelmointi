@@ -1,0 +1,13 @@
+INDEX VERSION 1.130
+C:\Users\sarah\OneDrive\Tiedostot\Haaga-Helia\Ohjelmointi\Java EE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1055160763.index
+\AsiakkaatWeb\src
+C:\Users\sarah\OneDrive\Tiedostot\Haaga-Helia\Ohjelmointi\Java EE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4021617933.index
+\VeneetWeb\src
+C:\Users\sarah\OneDrive\Tiedostot\Haaga-Helia\Ohjelmointi\Java EE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1098987991.index
+\AsiakkaatWeb\src
+C:\Users\sarah\OneDrive\Tiedostot\Haaga-Helia\Ohjelmointi\Java EE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\624327583.index
+\HaeAutotWeb\src
+C:\Users\sarah\OneDrive\Tiedostot\Haaga-Helia\Ohjelmointi\Java EE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4076023773.index
+\HaeAutotWeb\src
+C:\Users\sarah\OneDrive\Tiedostot\Haaga-Helia\Ohjelmointi\Java EE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\160944403.index
+\VeneetWeb\src

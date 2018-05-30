@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Java/src/oliot/Henkilot.java&apos; to &apos;Henkilo.java&apos;" description="Rename resource &apos;Henkilot.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/oliot/Henkilot.java" name="Henkilo.java" stamp="1519670393836" updateReferences="true"/>
+</session>

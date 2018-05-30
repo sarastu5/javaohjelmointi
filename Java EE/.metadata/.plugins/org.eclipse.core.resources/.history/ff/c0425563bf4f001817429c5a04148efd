@@ -1,0 +1,75 @@
+<%@include file="onkokirjauduttu.jsp" %>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="main.css">
+<title>Asiakkaiden tietojen muutos</title>
+</head>
+
+<%
+String id = "";
+if(request.getParameter("id") != null) {
+	id = request.getParameter("id");
+}
+
+String etunimi = "";
+if(request.getParameter("etunimi") != null) {
+	etunimi = request.getParameter("etunimi");
+}
+String sukunimi = "";
+if(request.getParameter("sukunimi") != null) {
+	sukunimi = request.getParameter("sukunimi");
+}
+String puhelin = "";
+if(request.getParameter("puhelin")!= null) {
+	puhelin = request.getParameter("puhelin");
+}
+
+String sposti = "";
+if(request.getParameter("sposti")!= null){
+	sposti = request.getParameter("sposti");
+}
+%>
+
+<body>
+	<form action="MuutaAsiakas" method="post">
+		<table border="1">
+			<tr>
+				<td align="right">Etunimi:</td>
+				<td><input type="text" name="etunimi" id=etunimi value="<%=etunimi%>"></td>
+			</tr>
+			<tr>
+				<td align="right">Sukunimi:</td>
+				<td><input type="text" name="sukunimi" id="sukunimi" value="<%=sukunimi%>"></td>
+			</tr>
+			<tr>
+				<td align="right">Puhelin:</td>
+				<td><input type="text" name="puhelin" id="puhelin" value="<%=puhelin%>"></td>
+			</tr>
+			<tr>
+				<td align="right">Sähköposti:</td>
+				<td><input type="text" name="sposti" id="sposti" value="<%=sposti%>"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" value="Muuta"></td>
+			</tr>
+		</table>
+		<input type="hidden" name="id" value="<%=id%>">
+	</form>
+	
+	<script>
+		$(document).ready(function(){
+			$("#etunimi").focus();
+	    $("#kaikki").click(function(){	    	
+	    	window.location.href = 'haeasiakkaat.jsp';
+	    });
+		});
+	</script>
+	
+	<a href="haeasiakkaat.jsp">Näytä kaikki asiakkaat</a>
+</body>
+</html>

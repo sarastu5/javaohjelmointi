@@ -1,0 +1,10 @@
+INDEX VERSION 1.4+C:\Users\sarah\OneDrive\Tiedostot\Haaga-Helia\Ohjelmointi\Java EE\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1677331360.index
+4234759987.index
+3520661542.index
+1671920179.index
+3771760689.index
+1025202583.index
+75295405.index
+2151656737.index
+4021617933.index

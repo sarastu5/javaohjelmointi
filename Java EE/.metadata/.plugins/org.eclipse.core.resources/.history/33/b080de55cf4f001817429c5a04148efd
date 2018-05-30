@@ -1,0 +1,7 @@
+td.otsikko {
+	font-weight: bold;
+}
+
+.lomake {
+	padding: 20px;
+}

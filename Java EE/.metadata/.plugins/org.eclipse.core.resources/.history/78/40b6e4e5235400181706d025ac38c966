@@ -1,0 +1,9 @@
+package model;
+
+public class Vene {
+	int tunnus;
+	String nimi, merkkimalli;
+	double pituus, leveys, hinta;
+}
+
+
